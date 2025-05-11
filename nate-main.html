@@ -24,6 +24,9 @@
                 display: flex;
                 flex-direction: column;
             }
+            nav{
+                flex-wrap: wrap; gap: 10px;
+            }
             h1{
                 color: red;
                 font-size: 32px;
@@ -31,56 +34,97 @@
             h5{
                 margin: 5px;
             }
-            div{
-                margin-top: 10px;
-            }
+           
             .news{
                 flex: 2.5; 
                 border-right: 1px solid #ccc;
+                
             }
+            .news p {
+                margin: 4px 0;
+                font-size: 15px;
+                line-height: 1.4;
+              }
             .login{
                 flex: 1; 
                 border: 1px solid #aaa; 
                 padding: 10px;
+            }
+            .articlebox{
+                border: 1px solid black; 
+                width: 170px;
+                height:150px;
+                margin-top: 10px;
             }
         </style>
     </head>
     <body>
         <div class="wrap">
             <header>
-                <div class="row" style="justify-content: start; align-items: center; gap: 10px;">
+                <div class="row" style="align-items: center; gap: 10px;">
                     <h1>nate</h1>
                     <input type="text" placeholder="검색어를 입력하세요" style="width: 600px; height: 40px; font-size: 16px;">
                     <div style="width: 40px; height: 40px; border-radius: 50%; background: purple;"></div>
                 </div>
-                <div class="row" style="justify-content: start; flex-wrap: wrap; gap: 15px;">
+                <nav class="row">
                     <h5>메일</h5><h5>뉴스</h5><h5>판</h5><h5>Ai챗</h5><h5>TV</h5>
                     <h5>만화</h5><h5>운세</h5><h5>게임</h5><h5>쇼핑</h5><h5>팀룸</h5>
                     <h5>네이트뷰</h5><h5>자동차</h5><h5>더보기</h5>
-                </div>
+                </nav>
             </header>
 
-             <div class="row" style="margin-top: 10px; gap: 10px;">
+             <div class="row" style="gap: 10px; margin-top:10px;">
                 <div style="flex: 2.3;">
                     <div style="border: 1px solid black; height: 125px;"></div>
 
-                    <div class="row" style="border:1px solid #ccc; padding: 10px;">
+                    <div class="row" style="margin-top:20px">
                         <div class="news">
-                            <h3>뉴스</h3>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolore rerum in quaerat doloribus, voluptates incidunt repellat, eum commodi ut minima nulla at architecto ea iste, omnis fuga odit perspiciatis.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad vel, dolorum aut quas deserunt qui excepturi recusandae, explicabo in repudiandae obcaecati tempore minus a, sit ducimus? Minus, ea facere!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi expedita similique sunt amet! Non, optio aliquid alias qui esse rem, voluptates temporibus quo adipisci quod neque pariatur, ipsam doloremque!</li>
-                            </ul>
+                            <nav class="row"><h5>뉴스</h5><h5>스포츠</h5><h5>연예</h5><h5>랭킹뉴스</h5></nav>
+                            <div class="row" style="gap: 15px; align-items: center;">
+                                <div class="articlebox"></div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="row" style="gap: 15px; align-items: center;">
+                                <div class="articlebox"></div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="row" style="gap: 15px; align-items: center;">
+                                <div class="articlebox"></div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
                         </div>
                        
                         <div class="weather" style="flex: 1; margin-left:5px">
-                            <h4>오늘의 날씨</h4>
-                            <p>2025년 5월 11일 (일)</p>
-                            <p>21°C | 맑음</p>
-                            <hr>
+                            <h5>오늘의 날씨</h5>
+                            <div style="border: 1px solid #ccc; height:150px; width:170px; padding: 10px">
+                                <p>2025년 5월 11일 (일)</p>
+                                <p>21°C | 맑음</p>
+                            </div>
+                            <div class="articlebox"></div>
+                            <div class="articlebox"></div>
                         </div>
                     </div>
+
+                    <nav class="row" style="margin-top: 20px;"><h5>뉴스</h5><h5>투데이베플</h5><h5>아이돌24시</h5><h5>톡톡</h5><h5>팬톡</h5></nav>
+                    <hr>
                 </div>
 
                 <div style="flex: 1;">
@@ -99,7 +143,7 @@
                             <a href="#">아이디/비밀번호 찾기</a> | <a href="#" style="font-weight: bold;">회원가입</a>
                         </div>
                     </div>
-                    <div style="flex-grow: 1; border:1px solid #ccc; padding: 10px;">
+                    <div style="flex-grow: 1; border:1px solid #ccc; padding: 10px; margin-top:10px;">
                         <div style="border: 1px solid black; height: 100px; margin-bottom: 20px;"></div>
                         <div style="border: 1px solid black; height: 100px; margin-bottom: 20px;"></div>
     
