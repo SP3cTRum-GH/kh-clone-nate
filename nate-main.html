@@ -34,6 +34,15 @@
             div{
                 margin-top: 10px;
             }
+            .news{
+                flex: 2.5; 
+                border-right: 1px solid #ccc;
+            }
+            .login{
+                flex: 1; 
+                border: 1px solid #aaa; 
+                padding: 10px;
+            }
         </style>
     </head>
     <body>
@@ -50,6 +59,59 @@
                     <h5>네이트뷰</h5><h5>자동차</h5><h5>더보기</h5>
                 </div>
             </header>
+
+             <div class="row" style="margin-top: 10px; gap: 10px;">
+                <div style="flex: 2.3;">
+                    <div style="border: 1px solid black; height: 125px;"></div>
+
+                    <div class="row" style="border:1px solid #ccc; padding: 10px;">
+                        <div class="news">
+                            <h3>뉴스</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolore rerum in quaerat doloribus, voluptates incidunt repellat, eum commodi ut minima nulla at architecto ea iste, omnis fuga odit perspiciatis.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad vel, dolorum aut quas deserunt qui excepturi recusandae, explicabo in repudiandae obcaecati tempore minus a, sit ducimus? Minus, ea facere!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi expedita similique sunt amet! Non, optio aliquid alias qui esse rem, voluptates temporibus quo adipisci quod neque pariatur, ipsam doloremque!</li>
+                            </ul>
+                        </div>
+                       
+                        <div class="weather" style="flex: 1; margin-left:5px">
+                            <h4>오늘의 날씨</h4>
+                            <p>2025년 5월 11일 (일)</p>
+                            <p>21°C | 맑음</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="flex: 1;">
+                    <div class="login">
+                        <form>
+                            <label style="font-size: smaller;"><input type="checkbox"> 로그인 유지 | IP보안ON</label><br>
+                            <div style="display: flex; border: 1px solid #ccc; border-right: none; margin: 5px 0;">
+                                <div class="column" style="flex: 1; margin-top:0px">
+                                    <input type="text" placeholder="아이디 or @이하 모두 입력" style="border: none; border-bottom: 1px solid #ccc; padding: 8px;">
+                                    <input type="password" placeholder="비밀번호" style="border: none; padding: 8px;">
+                                </div>
+                                <button type="submit" style="width: 80px; border: none; background: #f5f5f5; border-left: 1px solid #ccc;">로그인</button>
+                            </div>
+                        </form>
+                        <div style="font-size: smaller; margin-top: 5px;">
+                            <a href="#">아이디/비밀번호 찾기</a> | <a href="#" style="font-weight: bold;">회원가입</a>
+                        </div>
+                    </div>
+                    <div style="flex-grow: 1; border:1px solid #ccc; padding: 10px;">
+                        <div style="border: 1px solid black; height: 100px; margin-bottom: 20px;"></div>
+                        <div style="border: 1px solid black; height: 100px; margin-bottom: 20px;"></div>
+    
+                        
+                        <h4>쇼핑 정보</h4>
+                        <ul>
+                            <li>티셔츠 특가 9,000원~</li>
+                            <li>마나그램 원피스 신상</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
