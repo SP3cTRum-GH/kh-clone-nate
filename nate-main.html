@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>title</title>
+        <link rel="stylesheet" href="linkToCSS" />
+        <style>
+            .wrap{
+                width: 1080px;
+                height: auto;
+                margin: 0 auto;
+                padding-top: 0;
+            }
+            header{
+                height: auto;
+                margin: 0 auto 0;
+                border-bottom: 1px solid black;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+            }
+            .column{
+                display: flex;
+                flex-direction: column;
+            }
+            h1{
+                color: red;
+                font-size: 32px;
+            }
+            h5{
+                margin: 5px;
+            }
+            div{
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div class="row" style="justify-content: start; align-items: center; gap: 10px;">
+                    <h1>nate</h1>
+                    <input type="text" placeholder="검색어를 입력하세요" style="width: 600px; height: 40px; font-size: 16px;">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: purple;"></div>
+                </div>
+                <div class="row" style="justify-content: start; flex-wrap: wrap; gap: 15px;">
+                    <h5>메일</h5><h5>뉴스</h5><h5>판</h5><h5>Ai챗</h5><h5>TV</h5>
+                    <h5>만화</h5><h5>운세</h5><h5>게임</h5><h5>쇼핑</h5><h5>팀룸</h5>
+                    <h5>네이트뷰</h5><h5>자동차</h5><h5>더보기</h5>
+                </div>
+            </header>
+        </div>
+    </body>
+</html>
