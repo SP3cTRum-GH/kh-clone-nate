@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>title</title>
+        <link rel="stylesheet" href="linkToCSS" />
+        <style>
+            .wrap{
+                width: 1080px;
+                height: auto;
+                margin: 0 auto;
+                padding-top: 0;
+            }
+            header{
+                height: auto;
+                margin: 0 auto 0;
+                border-bottom: 1px solid black;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+            }
+            .column{
+                display: flex;
+                flex-direction: column;
+            }
+            nav{
+                flex-wrap: wrap; gap: 10px;
+            }
+            h1{
+                color: red;
+                font-size: 32px;
+            }
+            h5{
+                margin: 5px;
+            }
+           
+            .news{
+                flex: 2.5; 
+                border-right: 1px solid #ccc;
+                
+            }
+            .news p {
+                margin: 4px 0;
+                font-size: 15px;
+                line-height: 1.4;
+              }
+            .login{
+                flex: 1; 
+                border: 1px solid #aaa; 
+                padding: 10px;
+            }
+            .articlebox{
+                border: 1px solid black; 
+                width: 170px;
+                height:150px;
+                margin-top: 10px;
+            }
+            .flex-row-between {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                margin-top: 10px;
+            }
+            .shopping-box {
+                width: 90px;
+                height: 120px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div class="row" style="align-items: center; gap: 10px;">
+                    <h1>nate</h1>
+                    <input type="text" placeholder="검색어를 입력하세요" style="width: 600px; height: 40px; font-size: 16px;">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: purple;"></div>
+                </div>
+                <nav class="row">
+                    <h5>메일</h5><h5>뉴스</h5><h5>판</h5><h5>Ai챗</h5><h5>TV</h5>
+                    <h5>만화</h5><h5>운세</h5><h5>게임</h5><h5>쇼핑</h5><h5>팀룸</h5>
+                    <h5>네이트뷰</h5><h5>자동차</h5><h5>더보기</h5>
+                </nav>
+            </header>
+
+             <div class="row" style="gap: 10px; margin-top:10px;">
+                <div style="flex: 2.3;">
+                    <div style="border: 1px solid black; height: 125px;"></div>
+
+                    <div class="row" style="margin-top:20px">
+                        <div class="news">
+                            <nav class="row"><h5>뉴스</h5><h5>스포츠</h5><h5>연예</h5><h5>랭킹뉴스</h5></nav>
+                            <div class="row" style="gap: 15px; align-items: center;">
+                                <div class="articlebox"></div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="row" style="gap: 15px; align-items: center;">
+                                <div class="articlebox"></div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="row" style="gap: 15px; align-items: center;">
+                                <div class="articlebox"></div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="weather" style="flex: 1; margin-left:5px">
+                            <h5>오늘의 날씨</h5>
+                            <div style="border: 1px solid #ccc; height:150px; width:170px; padding: 10px">
+                                <p>2025년 5월 11일 (일)</p>
+                                <p>21°C | 맑음</p>
+                            </div>
+                            <div class="articlebox"></div>
+                            <div class="articlebox"></div>
+                        </div>
+                    </div>
+
+                    <nav class="row" style="margin-top: 20px;"><h5>뉴스</h5><h5>최신뉴스</h5><h5>정치</h5><h5>경제</h5><h5>사회</h5></nav>
+                    <hr>
+                    <div>
+                        <nav class="row" style="margin-top: 20px;"><h5>Top랭킹</h5><h5>결사친</h5><h5>10대톡</h5><h5>연예톡</h5><h5>회사톡</h5></nav>
+                        <div class="row" style="gap: 10px;">
+                            <ol style="flex: 1;">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ol>
+                            <ol style="flex: 1;" start="11">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <nav class="row" style="justify-content: center; border-bottom:1px solid #ccc">
+                        <h5>TV</h5><h5>여행/맛집</h5><h5>FUN</h5><h5>만화/웹툰</h5><h5>라이프</h5><h5>자동차</h5><h5>쇼핑</h5>
+                    </nav>
+                    <p style="text-align: center; font-size:smaller">세상의 모든 재미 '네이트뷰'에서 확인하세요!</p>
+
+                    <div class="row flex-row-between">
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                    </div>
+                    <div class="row flex-row-between">
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                    </div>
+                    <div class="row flex-row-between">
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                    </div>
+                    <div class="row flex-row-between">
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                        <div class="articlebox"></div>
+                    </div>
+                </div>
+
+                <div style="flex: 1;">
+                    <div class="login">
+                        <form>
+                            <label style="font-size: smaller;"><input type="checkbox"> 로그인 유지 | IP보안ON</label><br>
+                            <div style="display: flex; border: 1px solid #ccc; border-right: none; margin: 5px 0;">
+                                <div class="column" style="flex: 1; margin-top:0px">
+                                    <input type="text" placeholder="아이디 or @이하 모두 입력" style="border: none; border-bottom: 1px solid #ccc; padding: 8px;">
+                                    <input type="password" placeholder="비밀번호" style="border: none; padding: 8px;">
+                                </div>
+                                <button type="submit" style="width: 80px; border: none; background: #f5f5f5; border-left: 1px solid #ccc;">로그인</button>
+                            </div>
+                        </form>
+                        <div style="font-size: smaller; margin-top: 5px;">
+                            <a href="#">아이디/비밀번호 찾기</a> | <a href="#" style="font-weight: bold;">회원가입</a>
+                        </div>
+                    </div>
+
+                    <div style="flex-grow: 1; border:1px solid black; margin-top:10px; height:190px"></div>
+
+                    <div style="border: 1px solid #ccc; margin-top:10px; padding: 10px;">
+                        <nav class="row" style="justify-content:space-around"><h5>쇼핑홈</h5><h5>플로럴</h5><h5>로즈몽</h5><h5>미나그램</h5></nav>
+
+                        <div style="border: 1px solid black; height:70px; margin-top:10px;"></div>
+
+                        <div class="row" style="justify-content: space-between; gap: 10px; margin-top: 10px;">
+                            <div class="shopping-box"></div>
+                            <div class="shopping-box"></div>
+                            <div class="shopping-box"></div>
+                        </div>
+                        <div class="row" style="justify-content: space-between; gap: 10px; margin-top: 10px;">
+                            <div class="shopping-box"></div>
+                            <div class="shopping-box"></div>
+                            <div class="shopping-box"></div>
+                        </div>
+                        <div class="row" style="justify-content: space-between; gap: 10px; margin-top: 10px;">
+                            <div class="shopping-box"></div>
+                            <div class="shopping-box"></div>
+                            <div class="shopping-box"></div>
+                        </div>
+                        <div class="row" style="justify-content: space-between; gap: 10px; margin-top: 10px;">
+                            <div class="shopping-box"></div>
+                            <div class="shopping-box"></div>
+                            <div class="shopping-box"></div>
+                        </div>
+
+                    </div>
+                    
+                    <div style="background-color: #f0eded; padding:10px">
+                        <h5>오늘의 추천상품</h5>
+
+                        <div class="row" style="justify-content: space-around; gap: 10px; margin-top: 10px;">
+                            <div style="width: 120px; height:160px; border:1px solid black;"></div>
+                            <div style="width: 120px; height:160px; border:1px solid black;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 10px; height:520px">
+                       <div class="column" style="height:100%; justify-content: space-around;">
+                            <h5>FUN & FUN해</h5>
+                            <div class="row" style="gap: 10px; padding:10px">
+                                <div style="flex:1; height:80px; border:1px solid black;"></div>
+                                <div style="flex:2.5 ">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p>Lorem ipsum dolor sit.</p>
+                                </div>
+                            </div>
+                            <div class="row" style="gap: 10px; padding:10px">
+                                <div style="flex:1; height:80px; border:1px solid black;"></div>
+                                <div style="flex:2.5 ">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p>Lorem ipsum dolor sit.</p>
+                                </div>
+                            </div>
+                            <div class="row" style="gap: 10px; padding:10px">
+                                <div style="flex:1; height:80px; border:1px solid black;"></div>
+                                <div style="flex:2.5 ">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p>Lorem ipsum dolor sit.</p>
+                                </div>
+                            </div>
+                            <div class="row" style="gap: 10px; padding:10px">
+                                <div style="flex:1; height:80px; border:1px solid black;"></div>
+                                <div style="flex:2.5 ">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p>Lorem ipsum dolor sit.</p>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            
+            <h5>짧고 강한 재미! 오늘의 숏폼</h5>
+
+            <div class="row" style="justify-content: space-around; margin-top:10px;">
+                <div style="width: 120px; height:250px; border:1px solid black;"></div>
+                <div style="width: 120px; height:250px; border:1px solid black;"></div>
+                <div style="width: 120px; height:250px; border:1px solid black;"></div>
+                <div style="width: 120px; height:250px; border:1px solid black;"></div>
+                <div style="width: 120px; height:250px; border:1px solid black;"></div>
+                <div style="width: 120px; height:250px; border:1px solid black;"></div>
+                <div style="width: 120px; height:250px; border:1px solid black;"></div>
+                <div style="width: 120px; height:250px; border:1px solid black;"></div>
+            </div>
+
+            <div class="row" style="gap: 10px; padding:5px; margin-top:20px">
+                <div style="flex:2; height:90px; border:1px solid black;"></div>
+                <div style="flex:1; height:90px; border:1px solid black;"></div>
+            </div>
+        
+            <div class="row" style="height:50px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; margin-top:20px; align-items: center;">
+                <p style="margin-right: 10px;">공지사항</p> 
+                <p style="margin-right: auto;">Lorem, ipsum dolor.</p>
+                <div style="border: 1px solid #ccc; width: 110px; height:30px;"></div>
+            </div> 
+
+            <nav class="row" style="justify-content: center; margin-top: 10px;">
+                <h5>회사소개</h5> <h5>|</h5> <h5>광고문의</h5> <h5>|</h5> <h5>서비스 약관</h5> <h5>|</h5> <h5>개인정보처리방침</h5> <h5>|</h5> <h5>청소년보호정책</h5> <h5>|</h5> <h5>고객센터</h5> <h5>|</h5> <h5>© NATE Communications</h5>
+            </nav>
+        </div>
+    </body>
+</html>
