@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nate 뉴스 클론</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .wrap {
+      width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+    }
+
+    .mini-bar {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: #333;
+    }
+    .mini-bar .right a {
+      margin-left: 10px;
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      border-bottom: 1px solid #ccc;
+      background-color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 20px;
+      margin-right: 6px;
+    }
+
+    .news-text {
+      font-size: 30px;
+      font-weight: bold;
+      padding: 8px;
+      color: #333;
+    }
+
+    .search-box {
+      display: flex;
+      border: 1px solid orangered;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 36px;
+    }
+
+    .search-box input {
+      border: none;
+      padding: 0 10px;
+      width: 400px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-box button {
+      background: none;
+      border: none;
+      padding: 0 10px;
+      font-size: 18px;
+      color: red;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      padding: 15px 50px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .main-content {
+      display: flex;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .main-news {
+      width: 60%;
+    }
+
+    .main-news .tag {
+      background-color: #0055cc;
+      color: white;
+      display: inline-block;
+      padding: 7px 40px;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .main-news h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .main-news .summary {
+      font-size: 16px;
+      color: gray;
+    }
+
+    .side-news {
+      width: 35%;
+      padding-left: 20px;
+    }
+
+    .side-news ul {
+      list-style: none;
+    }
+
+    .side-news li {
+      font-size: 18px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      padding: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .thumb-news {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .thumb-news div {
+      min-width: 230px;
+   
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+    }
+    .thumb-news img {
+     width: 100%;
+     height: auto;
+     margin-bottom: 8px;
+    border-radius: 4px;
+    }
+
+    .bottom-news {
+      display: flex;
+      padding: 20px;
+      gap: 40px;
+    }
+
+    .bottom-column {
+      flex: 1;
+    }
+
+    .bottom-column p {
+      font-size: 17px;
+      margin-bottom: 15px;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="mini-bar">
+      <div class="left">네이트 메인가기</div>
+      <div class="right">
+        <a href="#">로그인</a><a href="#">메일</a><a href="#">뉴스</a><a href="#">판</a><a href="#">TV</a>
+        <a href="#">톡톡</a><a href="#">만화</a><a href="#">게임</a><a href="#">쇼핑</a><a href="#">더보기 +</a>
+      </div>
+    </div>
+
+    <header>
+      <a href="민우형사이트여기에" class="logo">
+        <img src="./image/natelogo.svg" alt="nate 로고" />
+        <span class="news-text">뉴스</span>
+      </a>
+      <div class="search-box">
+        <input type="text" placeholder="검색어 입력" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="nate-bar">
+        스포츠 연예 판 날씨
+    </div>
+    </header>
+
+    <nav>
+      <a href="#">홈</a><a href="#">최신뉴스</a><a href="#">정치</a><a href="#">사회</a><a href="#">세계</a>
+      <a href="#">IT/과학</a><a href="#">칼럼</a><a href="#">포토</a><a href="#">TV</a>
+      <a href="#">라디오</a><a href="#">랭킹뉴스</a><a href="#">투데이댓글</a>
+    </nav>
+
+    <div class="banner">
+      <img src="./image/nanum.jpg" alt="배너이미지">
+    </div>
+
+    <div class="main-content">
+      <div class="main-news">
+        <div class="tag">제21대 대통령 선거</div>
+        <h2>7명 대선 후보 등록...치이카와 기호 1번, 하치와레 2번, 김민우 4번...</h2>
+        <div class="summary">2025-05-11 | 서울=뉴스1 푸항항 기자 어쩌구저쩌구 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구</div>
+      </div>
+      <div class="side-news">
+        <ul>
+          <li>치이카와·하치와레·김민우 포함 7명 대선후보 등록...</li>
+          
+          <li>제21대 대선에 7명 출사표...기호 1번 치이카와</li>
+
+          <li>내일부터 대선 선거운동...22일 레이스 시작</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="thumb-news">
+      <div>
+        <img src="./image/msds.webp" alt="섬네일1">
+        아무 말 없던 김문수…포옹
+      </div>
+      <div>
+        <img src="./image/msamngun.webp" alt="섬네일2">
+        후보 확정되자 기자회견 시작
+      </div>
+      <div>
+        <img src="./image/sokcho.webp" alt="섬네일3">
+        속초 해안 방파제서 구조된 60대
+      </div>
+      <div>
+        <img src="./image/mumyunrider.webp" alt="섬네일4">
+        가다마 선박 전복…10대 실종
+      </div>
+    </div>
+
+    <div class="bottom-news">
+      <div class="bottom-column">
+        <p>권영세는 사퇴, 권성동은 '선거 지휘'..."사퇴하라" 반발도</p>
+        <p>SKT, 내일부터 '유심 재설정' 등 서비스 대기</p>
+        <p>김문수 선거운동 "새롭게 대한민국을"</p>
+        <p>공식 선거운동 전 호남 찾은 이재명 "김문수, 사과부터 해야"</p>
+        <p>치이카와가 세상을 구하기로 결정</p>
+      </div>
+      <div class="bottom-column">
+        <p>윤석열 전 대통령 "김문수 지지"...한동훈 "출당시켜야"</p>
+        <p>한덕수 총리 "김문수 승리 응원"</p>
+        <p>파키스탄 생명줄 끊어버린 인도..."이런 충돌은 아직 유효"</p>
+        <p>하치와레의 혼잣말노래 빌보드 1위 달성 충격..</p>
+        <p>최대 50%" 궁지 몰린 백종원 자구책…할인행사 호흡기 될..</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
